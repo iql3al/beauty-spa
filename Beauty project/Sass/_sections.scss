@@ -1,0 +1,204 @@
+// --- Feature Section ---- //
+
+
+.feature {
+   padding: 8rem 5rem;
+   background-color: $color-bkgnd;
+   display: grid;
+   grid-template-columns: repeat(4, minmax(min-content, 1fr));
+   grid-gap: 3rem;
+
+   &__card {
+      padding: 3rem;
+      // background-color: rgba($color-hover, .8);
+      background-color: rgb(255, 255, 255);
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+         transform: translateY(-.9rem);
+      }
+
+   }
+
+   &__imgbox {
+      height: 9rem;
+      width: 100%;
+      padding: 3rem;
+      text-align: end;
+   }
+
+   &__img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+   }
+
+   &__content {
+      height: 16rem;
+      width: 100%;
+      padding: 3rem;
+   }
+
+   &__link {
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $color-black;
+      letter-spacing: 1.3px;
+      
+      
+   }
+
+   &__span {
+      color: $color-pink;
+      margin-left: 2rem;
+      font-weight: 400;
+      font-style: italic;
+   }
+
+   &__para {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-top: 2rem;
+      text-align: justify;
+      font-style: italic;
+      color: rgba($color-black, .7);
+   }
+
+}
+
+// --- Appointment Section ---- //
+
+.appointment {
+   display: flex;
+
+   &__box1 {
+      flex: 0 0 50%;
+   }
+
+   &__box2 {
+      flex: 1;
+      background-color: $color-bkgnd;
+      
+   }
+   &__headingbox {
+      padding: 4rem 4rem;
+   }
+
+   &__group {
+      margin-bottom: 4rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
+   }
+
+   &__input {
+      font-size: 1.5rem;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255);
+      border: none;
+      border-bottom: 3px solid transparent;
+      width: 90%;
+      display: block;
+      transition: all .3s;
+      
+      
+      &:focus {
+         outline: none;
+         box-shadow: 0 1rem 4rem rgba($color-black, .09);
+      }
+
+      &:focus:invalid {
+     border-bottom: 2px solid rgba($color-black, .6);
+      }
+   }
+
+   &__label {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-top: .7rem;
+      margin-left: 2rem;
+      display: block;
+      transition: all .3s;
+   }
+   &__input:placeholder-shown + &__label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem);
+   }
+
+   &__radio-group {
+      width: 100%;
+      margin-bottom: 2rem;
+      display: block;
+   }
+
+   &__radio-input {
+      display: none;
+   }
+
+   &__radio-label {
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding-left: 4.5rem;
+      position: relative;
+      color: rgba($color-black, .8);
+   }
+
+   &__radio-span {
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      border: 5px solid rgba($color-black, .8);
+      border-radius: 50%;
+      left: 0;
+      top: -.4rem;
+
+      &::after {
+         content: "";
+         display: inline-block;
+         height: 1.3rem;
+         width: 1.3rem;
+         border-radius: 50%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: rgba($color-black, .8);
+         opacity: 0;
+         transition: opacity .3s;
+      }
+   }
+
+   &__radio-input:checked ~ &__radio-label &__radio-span::after {
+     opacity: 1;
+   }
+
+   &__button {
+      border: none;
+      background: #fff;
+      padding: 1.6rem 4rem;
+      margin-left: -4rem;
+      margin-top: 4rem;
+      border-radius: 100px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      transition: all .3s;
+
+      &:hover {
+         background-color: rgba($color-black, .9);
+         color: #fff;
+      }
+      &:active {
+         transform: translateY(4px);
+      }
+   }
+
+}

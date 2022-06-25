@@ -1,0 +1,58 @@
+//COLORS//
+$color-black: rgb(38, 34, 34);
+$color-pink: #faa2c7;
+$color-hover: #ececec;
+$color-grey: rgb(178, 178, 178);
+$color-bkgnd: rgba(219, 211, 189, 0.388);
+
+
+
+//REUSEABLE COMPONENTS//
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%; // 10px/16px = 62.5% //
+
+   ::selection {
+
+   }
+}
+
+body {
+   font-family: "Source Sans Pro", sans-serif;
+   font-weight: 300;
+   
+}
+
+.container {
+   padding: 0 4rem;
+}
+
+.heading-1 {
+   font-size: 7.5rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+
+.heading-2 {
+   font-size: 4rem;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+
+.activated {
+   background-color: $color-hover;
+}
+
+
+

@@ -1,0 +1,155 @@
+// header part //
+
+.header {
+   height: 8.5rem;
+   margin-bottom: 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgba($color-pink, .85);
+   border-radius: 2px;
+   position: fixed;
+   top: 0;
+   left: 4rem;
+   right: 4rem;
+
+   
+
+   &__box {
+      flex: 0 0 40%;
+      
+   }
+
+   &__img {
+      height: 11rem;
+      width: 11rem;
+      
+   }
+
+   &__navi {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
+   &__link{
+      &:link,
+      &:visited {
+         text-decoration: none;
+         padding: 1rem;
+         border-radius: 3px;
+         font-size: 1.5rem;
+         text-transform: uppercase;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-weight: 700;
+         color: $color-black;
+         margin-right: 2rem;
+         transition: all .2s;
+      }
+
+      &:hover {
+         background-color: $color-hover;
+      }
+      &:active {
+         transform: translateY(2px);
+      }
+      
+      
+      &:not(:last-child) {
+         
+      }
+   }
+
+   &__icon {
+      height: 2.2rem;
+      width: 2.2rem;
+      margin-right: 5px;
+      
+   }
+}
+
+
+// heading part //
+
+.background-img {
+   height: 100vh;
+   // background-image: linear-gradient(to right bottom, rgba($color-pink, .4), rgba($color-pink, .55)), url(/images/hero-1.jpg);
+   background-image: linear-gradient(to right bottom, rgba($color-grey, .55), rgba($color-grey, .7)), url(/images/hero-1.jpg);
+   background-size: cover;
+   background-position: top;
+   position: relative
+}
+
+.heading {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(min-content, 1fr));
+   grid-gap: 4rem;
+   justify-content: center;
+   align-items: center;
+   
+
+   &__box {
+      padding: 25rem 0 18rem 5rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      // position: absolute;
+      // top: 25rem;
+      // left: 4rem;
+      
+   }
+
+   &__span {
+      color: #fff;
+   }
+   &__para {
+      font-size: 2.2rem;
+      font-weight: 500;
+      color: rgba($color-hover, .75);
+   }
+
+   &__box2 {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      // position: absolute;
+      // top: 35rem;
+      // right: 25rem;
+   }
+
+   &__link {
+
+      &:link,
+      &:visited {
+         text-decoration: none;
+         font-size: 1.4rem;
+         font-weight: 900;
+         text-transform: uppercase;
+         padding: 1rem;
+         color: $color-black;
+         border-radius: 2px;
+         letter-spacing: .5px;
+         transition: all .2s;
+      }
+
+      &:hover {
+         background-color: rgba($color-hover, .75);
+      }
+      &:active {
+         transform: translateY(3px);
+      }
+   }
+
+   &__icon {
+      font-size: 1rem;
+      margin-left: .4rem;
+   }
+   
+}
+
+
+
+

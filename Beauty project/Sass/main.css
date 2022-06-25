@@ -1,0 +1,422 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  padding: 0 4rem;
+}
+
+.heading-1 {
+  font-size: 7.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.activated {
+  background-color: #ececec;
+}
+
+.header {
+  height: 8.5rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(250, 162, 199, 0.85);
+  border-radius: 2px;
+  position: fixed;
+  top: 0;
+  left: 4rem;
+  right: 4rem;
+}
+
+.header__box {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.header__img {
+  height: 11rem;
+  width: 11rem;
+}
+
+.header__navi {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__link:link, .header__link:visited {
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  color: #262222;
+  margin-right: 2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.header__link:hover {
+  background-color: #ececec;
+}
+
+.header__link:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.header__icon {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-right: 5px;
+}
+
+.background-img {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(178, 178, 178, 0.55)), to(rgba(178, 178, 178, 0.7))), url(/images/hero-1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(178, 178, 178, 0.55), rgba(178, 178, 178, 0.7)), url(/images/hero-1.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  grid-gap: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading__box {
+  padding: 25rem 0 18rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading__span {
+  color: #fff;
+}
+
+.heading__para {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: rgba(236, 236, 236, 0.75);
+}
+
+.heading__box2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading__link:link, .heading__link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 1rem;
+  color: #262222;
+  border-radius: 2px;
+  letter-spacing: .5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.heading__link:hover {
+  background-color: rgba(236, 236, 236, 0.75);
+}
+
+.heading__link:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.heading__icon {
+  font-size: 1rem;
+  margin-left: .4rem;
+}
+
+.feature {
+  padding: 8rem 5rem;
+  background-color: rgba(219, 211, 189, 0.388);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  grid-gap: 3rem;
+}
+
+.feature__card {
+  padding: 3rem;
+  background-color: white;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.feature__card:hover {
+  -webkit-transform: translateY(-0.9rem);
+          transform: translateY(-0.9rem);
+}
+
+.feature__imgbox {
+  height: 9rem;
+  width: 100%;
+  padding: 3rem;
+  text-align: end;
+}
+
+.feature__img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.feature__content {
+  height: 16rem;
+  width: 100%;
+  padding: 3rem;
+}
+
+.feature__link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #262222;
+  letter-spacing: 1.3px;
+}
+
+.feature__span {
+  color: #faa2c7;
+  margin-left: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.feature__para {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  text-align: justify;
+  font-style: italic;
+  color: rgba(38, 34, 34, 0.7);
+}
+
+.appointment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appointment__box1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.appointment__box2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: rgba(219, 211, 189, 0.388);
+}
+
+.appointment__headingbox {
+  padding: 4rem 4rem;
+}
+
+.appointment__group {
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.appointment__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.appointment__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 4rem rgba(38, 34, 34, 0.09);
+          box-shadow: 0 1rem 4rem rgba(38, 34, 34, 0.09);
+}
+
+.appointment__input:focus:invalid {
+  border-bottom: 2px solid rgba(38, 34, 34, 0.6);
+}
+
+.appointment__label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: .7rem;
+  margin-left: 2rem;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.appointment__input:placeholder-shown + .appointment__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.appointment__radio-group {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.appointment__radio-input {
+  display: none;
+}
+
+.appointment__radio-label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 4.5rem;
+  position: relative;
+  color: rgba(38, 34, 34, 0.8);
+}
+
+.appointment__radio-span {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  border: 5px solid rgba(38, 34, 34, 0.8);
+  border-radius: 50%;
+  left: 0;
+  top: -.4rem;
+}
+
+.appointment__radio-span::after {
+  content: "";
+  display: inline-block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(38, 34, 34, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.appointment__radio-input:checked ~ .appointment__radio-label .appointment__radio-span::after {
+  opacity: 1;
+}
+
+.appointment__button {
+  border: none;
+  background: #fff;
+  padding: 1.6rem 4rem;
+  margin-left: -4rem;
+  margin-top: 4rem;
+  border-radius: 100px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.appointment__button:hover {
+  background-color: rgba(38, 34, 34, 0.9);
+  color: #fff;
+}
+
+.appointment__button:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+/*# sourceMappingURL=main.css.map */

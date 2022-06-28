@@ -5,6 +5,15 @@ $color-hover: #ececec;
 $color-grey: rgb(178, 178, 178);
 $color-bkgnd: rgba(219, 211, 189, 0.388);
 
+// box-shadow: 0 2rem 5rem rgba(0,0,0, .07);
+
+
+//  BREAKPOINTS //
+$bp-largest: 84.375em;   //  1350px/16 = 84.375
+$bp-large: 62.5em;   //  1000px/16 = 62.5
+$bp-medium: 50em;   //  800px/16 = 50
+$bp-small: 40.625em; //  650px/16 = 40.625
+
 
 
 //REUSEABLE COMPONENTS//
@@ -24,34 +33,80 @@ html {
    ::selection {
 
    }
+
+   @media only screen and (max-width:$bp-largest) {
+      font-size: 56.25%;
+   }
+
+
+
+
+
+   @media only screen and (max-width:$bp-small) {
+      font-size: 43.75%;
+      
+      
+   }
 }
 
 body {
    font-family: "Source Sans Pro", sans-serif;
    font-weight: 300;
+   background-color: #fff;
    
 }
 
 .container {
-   padding: 0 4rem;
+   padding: 0;
 }
 
 .heading-1 {
    font-size: 7.5rem;
    font-weight: 700;
    text-transform: uppercase;
-   margin-bottom: 1rem;
+   
+
+   @media only screen and (max-width:$bp-largest) {
+      font-size: 6.5rem;
+   }
+
+   @media only screen and (max-width:$bp-large) {
+      font-size: 4.5rem;
+   }
+   @media only screen and (max-width:$bp-medium) {
+      font-size: 3.5rem;
+   }
 }
 
 .heading-2 {
-   font-size: 4rem;
+   font-size: inherit;
    font-weight: 700;
    text-transform: capitalize;
+
+   @media only screen and (max-width:$bp-largest) {
+      font-size: inherit;
+   }
+
+   @media only screen and (max-width:$bp-large) {
+      font-size: inherit;
+   }
+   @media only screen and (max-width:$bp-medium) {
+      font-size: inherit;
+   }
+}
+.heading-3 {
+   font-size: inherit;
+   font-weight: 500;
+
 }
 
 
 .activated {
-   background-color: $color-hover;
+  background-color: $color-hover;
+}
+
+.text-cntr {
+   text-align: center;
 }
 
 
